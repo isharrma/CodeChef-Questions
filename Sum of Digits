@@ -1,0 +1,23 @@
+#include <bits/stdc++.h>
+using namespace std;
+int sum(int a)
+{
+    int tot=0,x;
+    while(a!=0)
+    {
+        x=a%10;
+        tot+=x;
+        a=a/10;
+    }
+    return(tot);
+}
+int main() {
+	int n,a;
+	cin>>n;
+	for(int i=0;i<n;i++)
+	{
+	    cin>>a;
+	    cout<<sum(a)<<endl;
+	}
+	return 0;
+}
