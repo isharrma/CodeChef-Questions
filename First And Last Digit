@@ -1,0 +1,16 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+    int k;
+    cin>>k;
+    while (k--)
+    {
+	 int n,first,last,sum;
+    cin >> n;
+    first = n;
+	last=n % 10;
+	for(first=n;first>=10;first=first/10);
+	cout<<first+last<<endl;
+}
+	return 0;
+}
