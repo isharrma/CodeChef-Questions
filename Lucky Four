@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int t,a,c=0,p;
+    cin>>t;
+    while(t--)
+    {
+        cin>>a;
+        while(a!=0)
+        {
+            p=a%10;
+            a=a/10;
+            if(p==4)
+            {
+            c++;
+            }
+        }
+        cout<<c<<endl;
+        c=0;
+    }
+	return 0;
+}
